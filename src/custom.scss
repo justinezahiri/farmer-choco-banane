@@ -1,0 +1,18 @@
+// Override default variables before the import
+$body-bg:white;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+//COLORS
+$green: #91d72a;
+$yellow: #faff00;
+$brown: #470800;
+
+.title {
+  color: $green;
+}
