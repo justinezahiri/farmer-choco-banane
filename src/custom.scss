@@ -16,3 +16,33 @@ $brown: #470800;
 .title {
   color: $green;
 }
+
+.App {
+  section {
+    height: 100vh;
+  }
+
+  section:nth-child(1) {
+    background-color: $green;
+  }
+
+  section:nth-child(2) {
+    background-color: $yellow;
+  }
+
+  section:nth-child(3) {
+    background-color: $brown;
+  }
+
+  section.product h1 {
+    color: $yellow;
+  }
+
+  section.story h1 {
+    color: $brown;
+  }
+
+  section.action h1 {
+    color: $green;
+  }
+}
