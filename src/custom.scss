@@ -10,12 +10,9 @@ $body-bg:white;
 
 //COLORS
 $green: #91d72a;
+$darkgreen: #287525;
 $yellow: #faff00;
 $brown: #470800;
-
-.title {
-  color: $green;
-}
 
 .App {
   section {
@@ -23,26 +20,44 @@ $brown: #470800;
   }
 
   section:nth-child(1) {
-    background-color: $green;
-  }
+    background-color: white;
 
-  section:nth-child(2) {
-    background-color: $yellow;
-  }
+    @keyframes animatedBackground {
+      from {
+        background-position-x: -300%;
+      }
 
-  section:nth-child(3) {
-    background-color: $brown;
-  }
+      to {
+        background-position-x: 50%;
+      }
+    }
 
-  section.product h1 {
-    color: $yellow;
+    background-image: url("/images/farmerbox.jpg");
+    background-size: 40em;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    animation: animatedBackground 1s linear 1 normal;
   }
+}
 
-  section.story h1 {
-    color: $brown;
-  }
+section:nth-child(2) {
+  background-color: $yellow;
+}
 
-  section.action h1 {
-    color: $green;
-  }
+section:nth-child(3) {
+  background-color: $brown;
+}
+
+section.product h1 {
+  color: $darkgreen;
+  margin-left: 0.5em;
+  margin-top: 0.4em;
+}
+
+section.story h1 {
+  color: $brown;
+}
+
+section.action h1 {
+  color: $green;
 }
