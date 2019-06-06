@@ -5,7 +5,10 @@ function App() {
   return (
     <div className="App">
       <section class="product">
-        <h1>Pour le retour des farmers chocolat noir banane!</h1>
+        <div class="product-background bounce-in-left" />
+        <h1 class="product-title">
+          Pour le retour des farmers chocolat noir banane!
+        </h1>
       </section>
 
       <section className="story">

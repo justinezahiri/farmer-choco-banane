@@ -22,21 +22,26 @@ $brown: #470800;
   section:nth-child(1) {
     background-color: white;
 
-    // @keyframes animatedBackground {
-    //   from {
-    //     background-position-x: -300%;
-    //   }
+    .product-background {
+      background-image: url("/images/farmerbox.jpg");
+      background-size: 40em;
+      background-repeat: no-repeat;
 
-    //   to {
-    //     background-position-x: 50%;
-    //   }
-    // }
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+    }
 
-    background-image: url("/images/farmerbox.jpg");
-    background-size: 40em;
-    background-repeat: no-repeat;
-    // background-position: 50%;
-    // animation: animatedBackground 1s linear 1 normal;
+
+    .product {
+      position: relative;
+    }
+
+    .product-title {
+      position: relative;
+      z-index: 1;
+    }
   }
 
   .bounce-in-left {
