@@ -1,9 +1,14 @@
 import React from "react";
 import "./custom.scss";
+import Navbar from "./components/Navbar.js";
 
 function App() {
   return (
     <div className="App">
+      <div>
+        <Navbar />
+      </div>
+
       <section class="product">
         <div class="product-background bounce-in-left" />
         <h1 class="product-title">
